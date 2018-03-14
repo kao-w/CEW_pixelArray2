@@ -30,6 +30,9 @@ function windowResized(){
   resizeCanvas(windowWidth, windowHeight);
 }
 
+function preload(){
+   video= createVideo("assets/videos/fingers.mov");
+}
 
 function setup() {
   createCanvas(displayWidth, displayHeight);
@@ -52,7 +55,7 @@ function draw() {
  */
  
  function initializeVideo(){
-   video= createVideo("assets/videos/fingers.mov");
+  
    video.loop();
    video.hide();
  }
